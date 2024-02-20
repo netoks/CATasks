@@ -9,19 +9,19 @@ import java.util.List;
 public class Miskas <E extends Medis> {
     public void misrusMiskas (List<E> miskas) {
         for (E m : miskas) {
-            System.out.println(m.turi());
+            m.turi();
         }
     }
 
     public void spygliuociuMiskas (List<? extends Spygliuotis> miskas) {
         for (Spygliuotis m : miskas) {
-            System.out.println(m.turi());
+            m.turi();
         }
     }
 
     public void berzuMiskas (List<Berzas> miskas) {
         for (Berzas m : miskas) {
-            System.out.println(m.turi());
+            m.turi();
         }
     }
 }
