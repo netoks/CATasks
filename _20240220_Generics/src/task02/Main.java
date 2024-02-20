@@ -26,6 +26,6 @@ public class Main {
         spygliuociaiMedziai.add(new Egle());
         spygliuociaiMedziai.add(new Egle());
 
-        miskas.misrusMiskas(spygliuociaiMedziai);
+        miskas.spygliuociuMiskas(spygliuociaiMedziai);
     }
 }
