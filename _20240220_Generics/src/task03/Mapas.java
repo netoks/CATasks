@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Mapas<K, V> {
-    private List<Pora> sarasasPoru;
+    private List<Pora<K, V>> sarasasPoru;
 
     public Mapas() {
         sarasasPoru = new ArrayList<>();
@@ -15,9 +15,9 @@ public class Mapas<K, V> {
     }
 
     public V gauti (K raktas) {
-        for (Pora pora : sarasasPoru) {
+        for (Pora<K, V> pora : sarasasPoru) {
             if (pora.getRaktas().equals(raktas)) {
-                return (V) pora.getReiksme();
+                return pora.getReiksme();
             }
         }
         return null;
