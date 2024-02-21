@@ -6,20 +6,20 @@ import task02.medziai.Spygliuotis;
 
 import java.util.List;
 
-public class Miskas <E extends Medis> {
-    public void misrusMiskas (List<E> miskas) {
-        for (E m : miskas) {
+public abstract class Miskas {
+    public static void misrusMiskas (List<? extends Medis> miskas) {
+        for (Medis m : miskas) {
             m.turi();
         }
     }
 
-    public void spygliuociuMiskas (List<? extends Spygliuotis> miskas) {
+    public static void spygliuociuMiskas (List<? extends Spygliuotis> miskas) {
         for (Spygliuotis m : miskas) {
             m.turi();
         }
     }
 
-    public void berzuMiskas (List<Berzas> miskas) {
+    public static void berzuMiskas (List<Berzas> miskas) {
         for (Berzas m : miskas) {
             m.turi();
         }

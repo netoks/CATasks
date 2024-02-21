@@ -7,7 +7,6 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Miskas miskas = new Miskas();
 
         List<Medis> misrusMedziai = new ArrayList<>();
         misrusMedziai.add(new Azuolas());
@@ -16,7 +15,7 @@ public class Main {
         misrusMedziai.add(new Berzas());
         misrusMedziai.add(new Azuolas());
 
-        miskas.misrusMiskas(misrusMedziai);
+        Miskas.misrusMiskas(misrusMedziai);
 
         System.out.println();
 
@@ -26,6 +25,6 @@ public class Main {
         spygliuociaiMedziai.add(new Egle());
         spygliuociaiMedziai.add(new Egle());
 
-        miskas.spygliuociuMiskas(spygliuociaiMedziai);
+        Miskas.spygliuociuMiskas(spygliuociaiMedziai);
     }
 }
